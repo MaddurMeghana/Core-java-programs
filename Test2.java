@@ -1,15 +1,20 @@
-package com.Edubridge;
+package com.day3;
 
-class Product{
-		String pname="Speaker";	
-		static int prise=15000;
+public class Test2 {
+
+	public static void main(String[] args) {
+				int i=12,j=10;
+				
+				System.out.println("The addition is:"+(i+j)+"\nThe substraction is:"+(i-j)
+						
+						+"\nThe multiplication is:"+(i*j)+"\nDivision is:"+(i/j));
+				
+				int x=100;
+				x++;
+				System.out.println(x);
+				
+				++x;
+				System.out.println(x);
+				
+			}
 	}
-	public class Test2 {
-
-		public static void main(String[] args) {
-			Product p1=new Product();
-			System.out.println(p1.pname);
-			System.out.println(Product.prise);
-	}
-
-}

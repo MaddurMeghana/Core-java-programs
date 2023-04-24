@@ -1,18 +1,24 @@
-package com.Edubridge;
+package com.day3;
+	 class PersonInfo{
+		 	int page=20;
+		 	String pname="Jhon";
 
-public class Test1 {
+		 	void display()
+		 	{
+		 		String paddharno="456789789878M"; 
+		 		System.out.println("Adhar no is:"+paddharno);
+		 	}
+		 }
+		 public class Test1 {
 
-	public static void main(String[] args) {
-		Long a=129789547895784L;
-		System.out.println(a);
-		//char name="Jhon";
-		String name="Jhon";
-		float no=6777777777777.8888888888888880f;
-		double no1=677777777777.8888888888888880;
-		System.out.println(name);
-		System.out.println(no);
-		System.out.println(no1);
+		 	public static void main(String[] args) {
+		 		// TODO Auto-generated method stub
 
-	}
+		 		PersonInfo p1=new PersonInfo();
+		 		System.out.println(p1.page+" "+p1.pname);
+		 		p1.display();
+		 	}
 
-}
+		 }
+
+
