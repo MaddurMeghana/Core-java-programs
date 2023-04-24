@@ -1,25 +1,48 @@
-package com.oops;
+package com.edubridge;
 
-class Emp
-{
-	int eid;
-	String ename;
-	String eaddress;
-	
-	public void display(int eid,String ename,String eaddress)
+//Overriding(runtime)same method,same argument
+class Vehicle{
+	String name="Maruti";
+	public void disp()
 	{
-		System.out.println(eid+" "+ename+" "+eaddress);
+		System.out.println("Vehicle is:"+name);
+	}
+		
+}
+class Maruti 
+{
+	String speed="100km";
+	public void disp()
+	{
+		
+		System.out.println("Maruti speed is:"+speed);
+	}
+}
+class Bicycle
+{
+	String color="blue";
+	public void disp()
+	{
+		System.out.println("Bycycle color  is:"+color);
 	}
 }
 public class Test2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Emp e1=new Emp();
+
 		
-		e1.display(101, "sam", "pune");
-		e1.display(102, "jhon", "Mumbai");
-		e1.display(103, "Ayan", "Banglore");
+		Vehicle v1=new Vehicle();
+		
+		v1.disp();
+		
+		Maruti m1=new Maruti();
+		
+		m1.disp();
+		Bicycle b1=new Bicycle();
+		
+		b1.disp();
+		
 	}
 
 }

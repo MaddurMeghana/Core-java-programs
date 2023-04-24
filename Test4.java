@@ -1,25 +1,33 @@
-package com.oops;
- //single inheritance
-class Product{
-	int pid=101;
-	String pname="chair";
-	public void disp() {
-		System.out.println(pid+ " "+pname);
+package com.edubridge;
+class Student
+{
+	String name;
+	String address;
+	int age;
+	public void info(String name,String address,int age)
+	{
+		System.out.println(name+" "+address+" "+age);
 	}
 }
-class Orders extends Product{
-	int oid=1001;
-	String orderdate="17March2023";
-	String receivedate="18March2023";
-	public void show()
+
+class Employee extends Student
+{
+	public void info(String name,String address,int age)
 	{
-		System.out.println(oid+ " "+orderdate+" "+receivedate);
+		super.info("jhon", "Banglore", 15);
+		System.out.println(name+" "+address+" "+age);
 	}
 }
 public class Test4 {
-public static void main(String args[]) {
-	Orders o1=new Orders();
-	o1.disp();
-	o1.show();
-}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       Employee e1=new Employee();
+       
+       e1.info("sam", "pune", 22);
+
+		
+				
+	}
+
 }

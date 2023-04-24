@@ -1,53 +1,40 @@
-//Multiple inheritance
-package com.oops;
 
-class Addition
-{
-int i=10,j=5;
+package com.edubridge;
 
-	public void add()
-	{
-		System.out.println("The addition is:"+(i+j));
-	}
-}
-class Substraction  extends Addition
+class Product
 {
-	public void sub()
+	String pname;
+	int prise;
+	 Product() //default constructor
 	{
-		System.out.println("The substraction is:"+(i-j));
 		
-	}
-}
-class Multiplication extends Substraction
-{
-	public void mul()
-{
-	System.out.println("The multiplication is:"+(i*j));
-	
-}
-}
-class Division extends Multiplication
-	{
-		public void div()
-	{
-		System.out.println("The division is:"+(i/j));
-		
+		System.out.println("This is default constructor");
 	}
 	
+	Product(String pname,int prise) //parameterised constructor
+	{
+		System.out.println("The product name is:"+pname+"\nThe product prise:"+prise);
+	}
 }
-
 public class Test5 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		
-		Division d1=new Division();
-		d1.add();
-		d1.sub();
-		d1.mul();
-		d1.div();
-		
+		Product p2=new Product();
+		Product p1=new Product("Speaker",1500);
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+

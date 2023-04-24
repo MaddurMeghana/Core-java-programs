@@ -1,25 +1,31 @@
-package com.oops;
+package com.edubridge;
 
-class Employee
+//overloading(compile time polymorphism)
+//-function name same parameter are different
+class Calculations
 {
-	//data members
-	
-	int eid=101;
-	String ename="Jhon";
-	String eaddress="Mumbai";
-	int eid1=102;
-	String ename1="sam";
-	String eaddress2="Pune";
-	
+	public void add(int a, int b)
+	{
+		System.out.println("Addition is:"+(a+b));
+	}
+
+	public void add(int a, int b,int c)
+	{
+		System.out.println("Addition is:"+(a+b+c));
+	}
+	public void add(String  a, String  b)
+	{
+		System.out.println("Addition is:"+(a+b));
+	}
 }
 public class Test1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		Employee e1=new Employee();
-		System.out.println(e1.eid+" "+e1.ename+" "+e1.eaddress);
-		System.out.println(e1.eid1+" "+e1.ename1+" "+e1.eaddress2);
+		Calculations c1=new Calculations();
+		c1.add(10, 20);
+		c1.add("Hello", "World");
+		c1.add(10, 20,30);
 	}
 
 }
