@@ -1,17 +1,25 @@
-package com.Edubridge;
+package com.edubridge;
 
 public class Test3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int i=1;   //step1-initialization
+		String s1="Going to Nashik";
+		String s2="Going to Nashik";
+		String s3="Hello";
+		String s4="Nice hi";
 		
-		while(i<=10) //step 2-Condition
-		{
-			System.out.println("The value is :"+i);
-			i++;  //i=i+1;  step 3 autoincrement
-		}
+		
+		//if first string >second string it will give positive
+		//if first string <second string it will give Negative
+		//if both exactly match it returns 0
+		
+		System.out.println(s4.compareTo(s1));
+		
+		System.out.println(s1.compareTo(s2));
+		
+		System.out.println(s1.compareTo(s3));
 	}
 
 }

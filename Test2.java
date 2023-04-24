@@ -1,45 +1,20 @@
-package com.Edubridge;
+package com.edubridge;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class Test2 {
 
 	public static void main(String[] args) {
-	Scanner sc=new Scanner(System.in);
-	
-	System.out.println("Enter the number:");
-	
-	int x=sc.nextInt();
-	
-	System.out.println("Enter the number:");
-	
-	int y=sc.nextInt();
-	
-	
-	System.out.println("Press 1 for Addition\nPress 2 for substraction"
-			+ "\nPress 3 for Multiplication\nPress 4  for Division");
-	int choice=sc.nextInt();
-	
-	switch(choice) {
-	      
-	case 1:
-		System.out.println("Addition is:"+(x+y));
-	break;
-	case 2:
-		System.out.println("Substraction is:"+(x-y));
-	break;
-	case 3:
-		System.out.println("Multiplication is:"+(x*y));
-	break;
-	case 4:
-		System.out.println("Division is:"+(x/y));
-	break;
-	default:
-		System.out.println("Wrong choice");
-	
-	
-	}
-	
+		// TODO Auto-generated method stub
+
+		String s="Java is purely OOPS Language";
+		
+		System.out.println(s.length());
+		char [] arr=new char[5];
+		s.getChars(0, 5, arr, 0);
+		System.out.println(arr);
+		System.out.println(Arrays.toString(arr));
+		
 	}
 
 }

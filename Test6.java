@@ -1,25 +1,22 @@
-package com.Edubridge;
-
-
-import java.util.Scanner;
+package com.edubridge;
 
 public class Test6 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-      Scanner s1=new Scanner(System.in);
+
+		String s1="Java is purely OOPS Language";
 		
-		System.out.println("Enter number:");
+		System.out.println(s1);
 		
-		int n=s1.nextInt();
+		//where whitespace is their from that your string will divide
+		String a[]=s1.split("\\s");
 		
-		int i=1;
-		do
-		{
-			
-			System.out.println(n+"X"+i+"="+(n*i));
-			i++;
-		}while(i<=10);
+		for(String i:a) {
+			System.out.println(i);
+		}
+		
+		
 		
 	}
 

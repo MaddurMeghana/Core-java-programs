@@ -1,25 +1,29 @@
-package com.Edubridge;
-
-
-import java.util.Scanner;
+package com.edubridge;
 
 public class Test4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Scanner s1=new Scanner(System.in);
+		String str="Good";//immutable
 		
-		System.out.println("Enter number:");
+		 str=str+"Afternoon";
+		System.out.println(str);
 		
-		int n=s1.nextInt();
+		StringBuffer str1=new StringBuffer("Good");//mutable
+		str1.append("Evening");
+		str1.append("Hi");
+		System.out.println(str1);
+	
 		
-		int i=1;
-		while(i<=10)
-		{
-			System.out.println(n+"X"+i+"="+(n*i));
-			i++;
-		}
+		String s1="Java";
+		
+		System.out.println(s1.replace('a', 'b'));
+		
+		System.out.println(s1.replace("Java", "JavaScript"));
+		
+		
+	
 	}
 
 }

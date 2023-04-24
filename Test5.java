@@ -1,19 +1,38 @@
-package com.Edubridge;
+package com.edubridge;
 
-import java.util.Scanner;
+public class Test5 {
 
-	public class Test5 {
+	public static void main(String[] args) {
+		//mutable sequence of characters
+		StringBuilder s1=new StringBuilder("Jhon");
+		
+		System.out.println(s1);
+		
+		s1.append("Sam");
+		//using append at time u can add only single value
+		
+		System.out.println(s1);
+		
+		//using insert method we can add string on perticular index no
+		s1.insert(0,"kajal");
+		System.out.println(s1);
+		
+		s1.replace(1, 2, "Ajay");
+		
+		System.out.println(s1);
+		
+		s1.delete(1,5);
 
-		public static void main(String[] args) {
-			// TODO Auto-generated method stub
+		System.out.println(s1);
+		StringBuilder s2=new StringBuilder("Princi");
 
-			int i=1;
-			do
-			{
-				System.out.println(i);
-				i++;
-				
-			}while(i<=10);
-		}
-
+		System.out.println(s2);
+		
+		s2.reverse();
+	
+		System.out.println(s2);
+		
+		
 	}
+
+}
