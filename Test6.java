@@ -1,23 +1,40 @@
-package com.edubridge;
+package com.oops;
+class Animal
+{
+	//Hierarchical inheritance
+	String animalname="Dog";
+	public void eat()
+	{
+		System.out.println("Animal is eating");
+	}
+}
+class Dog extends Animal
+{
+	public void dance()
+	{
+		System.out.println(animalname +"is dancing in the rain");
+	}
+}
 
+class Puppies extends Animal
+{
+	public void bark()
+	{
+		System.out.println(animalname +"is barking ");
+	}
+}
 public class Test6 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String s1="Java is purely OOPS Language";
+		Dog d1=new Dog();
 		
-		System.out.println(s1);
+		d1.dance();
+		Puppies p1=new Puppies();
+		p1.bark();
 		
-		//where whitespace is their from that your string will divide
-		String a[]=s1.split("\\s");
-		
-		for(String i:a) {
-			System.out.println(i);
-		}
-		
-		
-		
+		p1.eat();
 	}
 
 }

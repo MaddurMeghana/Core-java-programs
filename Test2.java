@@ -1,20 +1,25 @@
-package com.edubridge;
+package com.oops;
 
-import java.util.Arrays;
-
+class Emp
+{
+	int eid;
+	String ename;
+	String eaddress;
+	
+	public void display(int eid,String ename,String eaddress)
+	{
+		System.out.println(eid+" "+ename+" "+eaddress);
+	}
+}
 public class Test2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		String s="Java is purely OOPS Language";
+		Emp e1=new Emp();
 		
-		System.out.println(s.length());
-		char [] arr=new char[5];
-		s.getChars(0, 5, arr, 0);
-		System.out.println(arr);
-		System.out.println(Arrays.toString(arr));
-		
+		e1.display(101, "sam", "pune");
+		e1.display(102, "jhon", "Mumbai");
+		e1.display(103, "Ayan", "Banglore");
 	}
 
 }
