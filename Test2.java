@@ -1,47 +1,33 @@
-package com.edubridge;
-
-//Overriding(runtime)same method,same argument
-class Vehicle{
-	String name="Maruti";
-	public void disp()
-	{
-		System.out.println("Vehicle is:"+name);
-	}
-		
-}
-class Maruti 
+package com.Day21;
+class Account
 {
-	String speed="100km";
-	public void disp()
-	{
-		
-		System.out.println("Maruti speed is:"+speed);
+	private long acc_no;
+	private float acc_amount;
+	public long getAcc_no() {
+		return acc_no;
 	}
-}
-class Bicycle
-{
-	String color="blue";
-	public void disp()
-	{
-		System.out.println("Bycycle color  is:"+color);
+	public void setAcc_no(long acc_no) {
+		this.acc_no = acc_no;
 	}
+	public float getAcc_amount() {
+		return acc_amount;
+	}
+	public void setAcc_amount(float acc_amount) {
+		this.acc_amount = acc_amount;
+	}
+	
+	
 }
 public class Test2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Account a1=new Account();
+		a1.setAcc_no(1001);
+		a1.setAcc_amount(5000);
 		
-		Vehicle v1=new Vehicle();
-		
-		v1.disp();
-		
-		Maruti m1=new Maruti();
-		
-		m1.disp();
-		Bicycle b1=new Bicycle();
-		
-		b1.disp();
+		System.out.println("The account No is:"+a1.getAcc_no());
+		System.out.println("The account amount is:"+a1.getAcc_amount());
 		
 	}
 

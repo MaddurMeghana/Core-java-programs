@@ -1,15 +1,28 @@
-package com.Edubridge;
+package com.Day21;
 
 public class Employee {
 
-	public static void main(String[] args) {
-	
-		int empid=101;
-		String empname="Jhon Dao";
-		int empage=40;
-		System.out.println(empid + " " + empname+ " " + empage);
-         System.out.println("Employee Id is:"+empid+"\nEmployee name is:"+empname+"\nEmployee age is:"+empage);
-		
+	private int eid;
+	private String ename;
+	private String eaddress;
+	public int getEid() {
+		return eid;
+	}
+	public void setEid(int eid) {
+		this.eid = eid;
+	}
+	public String getEname() {
+		return ename;
+	}
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+	public String getEaddress() {
+		return eaddress;
+	}
+	public void setEaddress(String eaddress) {
+		this.eaddress = eaddress;
 	}
 
+	
 }

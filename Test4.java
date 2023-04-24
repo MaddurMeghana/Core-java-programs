@@ -1,33 +1,37 @@
-package com.edubridge;
-class Student
+package com.Day21;
+abstract class Shape
 {
-	String name;
-	String address;
-	int age;
-	public void info(String name,String address,int age)
-	{
-		System.out.println(name+" "+address+" "+age);
-	}
+	abstract void area(int r);
+	
 }
 
-class Employee extends Student
+class Circle extends Shape
 {
-	public void info(String name,String address,int age)
-	{
-		super.info("jhon", "Banglore", 15);
-		System.out.println(name+" "+address+" "+age);
+
+	@Override
+	void area(int r) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("The area of circle is:"+(3.14*r*r));
 	}
+	
+}
+class Circumeference extends Circle
+{
+
+	@Override
+	void area(int r) {
+	super.area(r);
+		System.out.println("The area of circumference is"+(2*3.14*r));
+	}
+	
 }
 public class Test4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-       Employee e1=new Employee();
-       
-       e1.info("sam", "pune", 22);
-
-		
-				
+		Circumeference c1=new Circumeference();
+		c1.area(4);
 	}
 
 }

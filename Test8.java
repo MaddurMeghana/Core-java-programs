@@ -1,24 +1,29 @@
-package com.Edubridge;
+package com.Day21;
 
+abstract class Product
+{//The abstract method disp in type Product can only set a 
+	//visibility modifier, one of public or protected u cant set private
+	protected abstract void disp();
+	
+}
 
+class ProductInfo extends Product{
+
+	@Override
+	protected void disp() {
+		// TODO Auto-generated method stub
+		System.out.println("This is disp method");
+	}
+	
+	
+}
 public class Test8 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		//declaring array
-		//size of array is fix
-		//index start from 0
-		int[]a=new int[5];
-		a[0]=10;
-		a[2]=20;
-		a[4]=80;
-		//a[10]=100;
-		for(int i=0;i<a.length;i++)
-		{
-		System.out.println(a[i]);
+		ProductInfo p1=new ProductInfo();
 		
+		p1.disp();
 	}
-		System.out.println("The perticular index element:"+a[0]);
-	}
+
 }

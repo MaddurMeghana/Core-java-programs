@@ -1,25 +1,49 @@
-package com.edubridge;
+package com.Day21;
 
-//consructor overriding not supporting in java
-
-//constructor overloading possible
-class Shopping{
-	public Shopping()
-	{
-		System.out.println("This is shopping ");
-	}
-	public Shopping(String name,String address) {
-		System.out.println("I am purchasing"+name+"product"+"\nShop address is:"+address);
-	}
+interface i1
+{
+	void showi1();
+	
+}
+interface i2{
+	void showi2();
 }
 
+//achieving multiple inheritance functionality
+interface i3 extends i1,i2{
+	void showi3();
+}
+class Demo  implements i3
+{
+
+	@Override
+	public void showi1() {
+		System.out.println("This is show 1 method");
+		
+	}
+
+	@Override
+	public void showi2() {
+		System.out.println("This is show 2 method");
+		
+	}
+
+	@Override
+	public void showi3() {
+		System.out.println("This is show 3 method");
+		
+	}
+	
+}
 public class Test7 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Demo d1=new Demo();
+		
+		d1.showi1();
+		d1.showi2();
+		d1.showi3();
 
-		Shopping s1=new Shopping();
-		Shopping s2=new Shopping("Speaker","Mumbai Dadar");
 	}
 
 }

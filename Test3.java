@@ -1,40 +1,33 @@
-package com.edubridge;
-//super keyword is always used for to execute parent class
-//data only and u cant add that keyword in child class method
-class Animal
+package com.Day21;
+
+ abstract class Animal
 {
-	String  name="Tiger";
-	public void show()
-	{
-		System.out.println("This is Animal Class");
-	}
-}
-class Dog extends Animal
-{
+	abstract void eating();
 	
-	public void show()
-{
-		super.show();
-	System.out.println("The Dog name is:"+name);
-}
+	void barking()
+	{
+		System.out.println("This is barking method");
+	}
 	
 }
-class Cat extends Dog
-{
-	public void show()
-	{
-		super.show();
-		System.out.println("This is cat class");
+ class DemoAnimal extends Animal
+ {
+
+	@Override
+	void eating() {
+		// TODO Auto-generated method stub
+		System.out.println("This is eating method");
 	}
-}
+	 
+ }
 public class Test3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		Cat c1=new Cat();
+		DemoAnimal d1=new DemoAnimal();
 		
-		c1.show();
+		d1.barking();
+		d1.eating();
 		
 	}
 
