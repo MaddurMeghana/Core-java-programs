@@ -1,25 +1,37 @@
-package com.day3;
+package com.Edubridge;
+
 import java.util.Scanner;
+
+//Take input user for array
 public class Test9 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-Scanner sc=new Scanner(System.in);
+
 		
-		System.out.println("Enter number:");
-		int num=sc.nextInt();
-		if(num>0)
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the size of an array");
+		int size=sc.nextInt();
+		//declare array
+		int[]a=new int[size];
+		//reading the data
+		System.out.println("Enter the elements");
+		for(int i=0;i<a.length;i++)
 		{
-			System.out.println("Positive number");
+			a[i]=sc.nextInt();
 		}
-		else if(num<0)
+		
+		//display the data
+		System.out.println("The array elements are:");
+		for(int i=0;i<a.length;i++)
 		{
-			System.out.println("Negative number");
+			//System.out.print(a[i]+"\t");
+			System.out.println(a[i]);
 		}
-		else
-		{
-			System.out.println("Zero");
-		}
+		
+		
+		
 	}
 
 }

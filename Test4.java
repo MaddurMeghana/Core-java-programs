@@ -1,30 +1,25 @@
-package com.day3;
+package com.Edubridge;
 
-class Product
-{
-	int pid=1001;
-	static String pname="speaker";
-	static void display()
-	{
-		System.out.println("This static block");
-	}
-	void show()
-	{
-		System.out.println("This Nonstatic block");
-	}
-}//product is end
+
+import java.util.Scanner;
+
 public class Test4 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Product p1=new Product();
-		System.out.println(p1.pid);
-		System.out.println(Product.pname);
-		Product.display();
-		p1.show();
+		Scanner s1=new Scanner(System.in);
 		
+		System.out.println("Enter number:");
+		
+		int n=s1.nextInt();
+		
+		int i=1;
+		while(i<=10)
+		{
+			System.out.println(n+"X"+i+"="+(n*i));
+			i++;
+		}
 	}
-	
 
 }

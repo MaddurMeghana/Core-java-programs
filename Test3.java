@@ -1,20 +1,17 @@
-package com.day3;
+package com.Edubridge;
 
 public class Test3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int no1=10,no2=7,result,answer;
-		//variable name=(condition) ?expression1:expression2;
+		int i=1;   //step1-initialization
 		
-		result=(no1>no2)? no1:no2;
-		System.out.println(result);
-		
-		answer=(no1<no2)?(no1+no2):(no1-no2);
-		
-		System.out.println(answer);
-		
+		while(i<=10) //step 2-Condition
+		{
+			System.out.println("The value is :"+i);
+			i++;  //i=i+1;  step 3 autoincrement
+		}
 	}
 
 }

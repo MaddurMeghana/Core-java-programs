@@ -1,33 +1,24 @@
-package com.day3;
+package com.Edubridge;
 
-import java.util.Scanner;
+
 
 public class Test10 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-     Scanner s1=new Scanner(System.in);
+	//1st [] consider as row (outer loop)
+		//2nd [] consider as column(inner loop)
+//jagged array-array within array(2 D)
+		int arr[][]= {{1,2},{2,3,4},{0,0,1,2}};
 		
-		System.out.println("Enter no:");
-		int x=s1.nextInt();
-		System.out.println("Enter no:");
-		int y=s1.nextInt();
-		System.out.println("Enter no:");
-		int z=s1.nextInt();
+		//print 2 D array
 		
-		if((x>y)&&(x>z))
+		for(int i=0;i<arr.length;i++)
 		{
-			System.out.println("x is larger number");
-		}
-		
-		if((y>x)&&(y>z))
-		{
-			System.out.println("y is larger number");
-		}
-		
-		if((z>x)&&(z>y))
-		{
-			System.out.println("z is larger number");
+			for(int j=0;j<arr[i].length;j++)
+			{
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println();
 		}
 		
 	}

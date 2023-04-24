@@ -1,24 +1,19 @@
-package com.day3;
+package com.Edubridge;
 
 import java.util.Scanner;
 
-public class Test5 {
+	public class Test5 {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
 
-		Scanner sc=new Scanner (System.in);
-		
-		System.out.println("Enter Name of Person:");
-		String Pname=sc.nextLine();
-		
-        System.out.println("Age of Person:");
-        
-        int age=sc.nextInt();
-        
-        System.out.println("The name of person is:"+Pname+"\nThe age of person is:"+age);
-		
-		
+			int i=1;
+			do
+			{
+				System.out.println(i);
+				i++;
+				
+			}while(i<=10);
+		}
+
 	}
-
-}

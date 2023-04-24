@@ -1,41 +1,25 @@
-package com.day3;
+package com.Edubridge;
+
 
 import java.util.Scanner;
 
-class Employee
-{
-	int eid;
-	String ename;
-	String edept;
-	
-}
 public class Test6 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
-		Employee e1=new Employee();
+      Scanner s1=new Scanner(System.in);
 		
-		Scanner s1=new Scanner(System.in);
+		System.out.println("Enter number:");
 		
-		System.out.println("Enter employee id:");
+		int n=s1.nextInt();
 		
-		e1.eid=s1.nextInt();
-		
-
-		System.out.println("Enter employee name:");
-		
-		e1.ename=s1.next();
-		
-
-		System.out.println("Enter employee department name:");
-		
-		e1.edept=s1.next();
-		
-		System.out.println("Employee id is:"+e1.eid+
-				"\nEmployee name:"+e1.ename+
-				"\nEmployee department name:"+e1.edept);
-		
+		int i=1;
+		do
+		{
+			
+			System.out.println(n+"X"+i+"="+(n*i));
+			i++;
+		}while(i<=10);
 		
 	}
 
